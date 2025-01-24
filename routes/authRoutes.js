@@ -42,7 +42,7 @@ router.post("/login", async (req, res) => {
       return res.status(404).json({ message: "User not found" });
     }
 
-    if (rows[0].status === "blocked") {
+    if (rows[0].status === "Blocked") {
       return res.status(403).json({ message: "Your account has been blocked" });
     }
 
